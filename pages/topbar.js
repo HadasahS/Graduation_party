@@ -34,11 +34,12 @@ template.innerHTML = `
             }
         </style>
   <div class="topnav">
-    <a  href="home.html">Home</a>
-    <a href="arrival.html">Arrival confirmation</a>
-    <a href="#about">About</a>
+    <a href="home.html" >Home</a>
+    <a href="arrival.html" id="Arrival">Arrival confirmation</a>
+    <a href="about.html">About</a>
   </div>
 `;
+//TODO change atribute "active" acording to page
 
 class TopBar extends HTMLElement {
   constructor() {
@@ -48,6 +49,11 @@ class TopBar extends HTMLElement {
     // Apply template
     this.shadowRoot.appendChild(template.content.cloneNode(true));
     // shadow.appendChild(template.content.cloneNode(true));
+  }
+
+  addActive() {
+    console.log("Active");
+    return "active";
   }
 }
 customElements.define("top-bar", TopBar);
