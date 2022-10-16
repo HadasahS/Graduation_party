@@ -6,7 +6,7 @@ body {
 
 #heads {
   color: white;
-  padding: 10% 0% 1% 0%;
+  padding: 5% 0% 1% 0%;
   font-family: system-ui;
   color: rgb(90, 8, 8);
 }
@@ -15,6 +15,23 @@ h1 {
   padding: 0%;
 }
 
-iframe {
-  border: 1px solid black;
+/* Add a black background color to the bottom navigation */
+.botomnav {
+  background-color: rgb(98, 37, 37);
+  opacity: 0.5;
+  overflow: hidden;
+  width: 99%;
+  position: fixed;
+  bottom: 0;
+}
+
+/* Style the links inside the navigation bar */
+.botomnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: system-ui;
 }
