@@ -34,7 +34,7 @@ template.innerHTML = `
             }
         </style>
   <div class="topnav">
-    <a href="home.html" >Home</a>
+    <a href="../index.html" >Home</a>
     <a href="arrival.html" id="Arrival">Arrival confirmation</a>
     <a href="about.html">About</a>
   </div>
